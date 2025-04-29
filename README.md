@@ -1,3 +1,41 @@
+```python
+
+Dict = {}
+
+while True:
+    print("Welcome to the BMI Calculator and Tracker")
+    Unit = input("In which unit do you want to calculate? Type '1' if in Kg/m^2, type '2' if in lb/ft^2: ").strip()
+    if Unit == "1":
+        a = input("Your Name : ").strip()
+        b = int(input("Your Age : "))
+        c = float(input("Your Weight(in KG) : "))
+        d = float(input("Your Height(in M) : "))
+        bmi = c / (d * d)
+        bmi2f = f"{bmi:.2f}"
+        if b < 18:
+            print(f"{a}, you are not an Adult. Your BMI is {bmi2f}")
+            if bmi < 18:
+                print("And you need to gain some weight.")
+            elif bmi > 25:
+                print("And you need to lose some weight.")
+            else:
+                print("And you are totally NORMAL.")
+        else:
+            print(f"{a}, you are an Adult. Your BMI is {bmi2f}")
+            if bmi < 18:
+                print("And you need to gain some weight.")
+            elif bmi > 25:
+                print("And you need to lose some weight.")
+            else:
+                print("And you are totally NORMAL.")
+        e = input("Do you want to save your data? Type '1' if YES, type '2' if NO or type '3' to recalculate : ").strip()
+        if e == "1":
+            numb = input("Last two digits of your Phone Number : ").strip()
+            Dict[numb] = {a: bmi2f}
+            print("Your data has been saved.")
+        elif e == "2":
+            print("Data not saved.")
+
 Dict = {}
 
 while True:
