@@ -12,6 +12,7 @@ Type '1' if in Kg/m^2, type '2' if in lb/ft^2 : """).strip()
         d = float(input("Your Height(in M) : "))
         bmi = c / (d * d)
         bmi2f = f"{bmi:.2f}"
+        
         if b < 18:
             print(f"""
 {a}, you are not an Adult.
