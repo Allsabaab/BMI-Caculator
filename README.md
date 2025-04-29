@@ -1,1 +1,9 @@
-I made a BMI Calculator with Python. This is not just an ordinary calculator. You can store your BMI Data in it with your personal indexes, modify them and view your own data at the same time. For permanent storing of data you might have to give it a storage directory.
+This project is a simple terminal-based BMI (Body Mass Index) calculator and personal tracker built using Python. It allows users to calculate their BMI in either metric (kg/m²) or imperial (lb/ft²) units. Based on the BMI value and age, the program provides a health suggestion—whether the person needs to gain or lose weight or is in a normal range.
+
+Additionally, the app offers features to:
+
+  • Save user data using the last two digits of a phone number as a key.
+  • Retrieve previously saved BMI records.
+  • Recalculate or exit as desired.
+ 
+ This tool is useful for basic health tracking and helps users become more aware of their weight status with minimal input.
